@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Materi/Styling/Header';
+import About from './Materi/Styling/About';
+import Footer from './Materi/Styling/Footer';
+import './Materi/Styling/index.css';
+import Portofolio from './Materi/Styling/Portofolio';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js hello</code> and save to reload this is my portofolio app.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <About />
+      <Portofolio />
+      <Footer />
     </div>
   );
 }
